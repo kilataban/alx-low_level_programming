@@ -11,15 +11,13 @@
 
 int main(void)
 {
-        char * alp = "abcdefghijklmnopqrstuvwxyz";
-        int n = 0;
-	int alp_length = 26;
+        char alph;
 
-	for(n = 0; n < alp_length; n++)
+	for(alph = 'a'; alph <= 'z'; alph++)
 	{
-		if(n != 'e' && n != 'q')
+		if (alph != 'e' && alph != 'q')
 		{
-			printf("%c\n", alp[n]);
+			putchar(alph);
 		}
 	}
 	return (0);
