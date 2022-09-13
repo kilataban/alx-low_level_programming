@@ -12,11 +12,11 @@
 int main(void)
 {
         char alp[52] = "abcdefghijklmnopqrstuvwxyz";
-        int arrLen = sizeof alp[52] / sizeof alp[0];
+	char full_alp[50] = "";
         int n = 0;
-        while (n < arrLen && alp[n] != 'e' && alp[n] != 'q')
+        while (n < strlen(alp) && alp[n] != 'e' && alp[n] != 'q')
         {
-                printf("%c\n", alp[n]);
+		printf("%c\n", alp[n]);
                 n++;
         }
         return (0);
