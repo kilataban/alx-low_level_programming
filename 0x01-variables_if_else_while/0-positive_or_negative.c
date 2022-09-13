@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-
 /**
- * main - Prints a random number to the variable n upon execution
+ * main - decides if  a random number has a positive, negative or zero value
  *
- * always return: (0)
+ * Return: Always (0) Success
  */
-
 int main(void)
 {
 	int n;
@@ -29,4 +27,3 @@ int main(void)
 
 	return (0);
 }
-
