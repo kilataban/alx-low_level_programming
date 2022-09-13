@@ -11,13 +11,15 @@
 
 int main(void)
 {
-        char alp[52] = "abcdefghijklmnopqrstuvwxyz";
+        char * alp = "abcdefghijklmnopqrstuvwxyz";
         int n = 0;
-	
-        while (n < sizeof alp && alp[n] != 'e' && alp[n] != 'q')
-        {
-		printf("%c\n", alp[n]);
-		n++;
-        }
-        return (0);
+
+	for(n = 0; n < strlen(alp); n++)
+	{
+		if(n != 'e' && n != 'q')
+		{
+			printf("%c\n", alp[n]);
+		}
+	}
+	return (0);
 }
