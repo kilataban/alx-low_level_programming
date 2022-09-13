@@ -4,7 +4,8 @@
  *
  * Return: Always (0) for success
  */
-int main(void){
+int main(void)
+{
 	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int n;
 
