@@ -16,10 +16,10 @@ void print_triangle(int size)
 	{
 		for (y = 1; y <= size; y++)
 		{
-			if (y <= (size - x))
-				_putchar(' ');
-			else if (size <= 0)
+			if (size <= 0)
 				_putchar('\n');
+			else if (y <= (size - x))
+				_putchar(' ');
 			else
 				_putchar('#');
 		}
