@@ -1,30 +1,35 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangle
- * @size: size of the triangle
- *
- * Return: Always (0)
+ * print_triangle - print a triangle aligned right, using '#'
+ * @size: Size of triangle
  */
-
 void print_triangle(int size)
 {
-	int x;
-	int y;
+	int c, i, j;
 
-	for (x = 1; x <= size; x++)
+	c = 0;
+	i = size - 1;
+	while (c < size)
 	{
-		for (y = 1; y <= size; y++)
+		i = size - 1 - c;
+		j = c + 1;
+		while (i > 0)
 		{
-			if (size <= 0)
-				_putchar('\n');
-			else if (y <= (size - x))
-				_putchar(' ');
-			else
-				_putchar('#');
+			_putchar(' ');
+			i--;
+		}
+		while (j > 0)
+		{
+			_putchar('#');
+			j--;
 		}
 		_putchar('\n');
+		c++;
 	}
+
+	if (size <= 0)
+		_putchar('\n');
 }
 
 
