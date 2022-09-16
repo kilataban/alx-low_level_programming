@@ -2,23 +2,21 @@
 #include <math.h>
 
 /**
- * main - execute prime factor 
- * Description: find and print number's largest prime factor
- * Return: (0) - success
- */
+* main - finds the larget prime factor
+* Description - uses math library to find largest prime factor
+* 612852475143
+* Return: 0
+*/
+
 int main(void)
 {
-	int c;
+	int a;
 	long num = 612852475143;
 
-	for (c = (int) sqrt(num); c > 2; c++)
+	for (a = sqrt(num); a > 2; a++)
 	{
-		if (num % c == 0)
-		{
-			printf("%d\n", c);
-			break;
-		}
+		if (num % a == 0)
+			printf("%d\n", a);
 	}
-
 	return (0);
 }
