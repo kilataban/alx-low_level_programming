@@ -3,8 +3,7 @@
 /**
 * main - invoke fizbuzz for numbers 1 to 100
 * Description: multiples of three - Fizz, multiples of five - Buzz
-* multiples of both 3 & 5 - FizzBuzz.
-* Return (0)
+* Return: (0)
 */
 
 int main(void)
