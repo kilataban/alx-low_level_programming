@@ -4,12 +4,14 @@
 /**
  * main - prints prime factors of 612852475143
  *
- * Return: value * 1  (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
 	long y = 612852475143;
 
-	return (y);
+	printf("%ld\n", y);
+
+	return (0);
 }
