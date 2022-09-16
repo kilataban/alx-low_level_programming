@@ -1,6 +1,7 @@
 #ifndef _MAIN_H
 #define _MAIN_H_
 
+int mul(int a, int b);
 int _isupper(int c);
 int _isdigit(int c);
 void print_alphabet(void);
