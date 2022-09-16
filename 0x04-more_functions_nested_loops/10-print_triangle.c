@@ -2,9 +2,9 @@
 
 /**
  * print_triangle - prints a triangle
- *@size: size of the triangle
+ * @size: size of the triangle
  *
- * Return: Always 0.
+ * Return: Always (0)
  */
 
 void print_triangle(int size)
@@ -16,7 +16,7 @@ void print_triangle(int size)
 	{
 		for (y = 1; y <= size; y++)
 		{
-			if (y <= size - x)
+			if (y <= (size - x))
 				_putchar(' ');
 			else
 				_putchar('#');
