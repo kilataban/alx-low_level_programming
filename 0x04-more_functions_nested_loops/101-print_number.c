@@ -9,9 +9,29 @@
 
 void print_number(int n)
 {
-	if (n / 10 != 0)
+	unsigned int a, b, c;
+
+	if (n < 0)
 	{
-	putchar(n % 10);
-	print_number((n - n % 10) / 10);
-}
+		_putchar(45);
+		a = n * -1;
+	}
+	else
+	{
+		a = n;
+	}
+
+	b = a;
+	c = 1;
+
+	while (b > 9)
+	{
+		b /= 10;
+		c *= 10;
+	}
+
+	for (; c  >= 1; c /= 10)
+	{
+		_putchar(((a / c) % 10) + 48);
+	}
 }
