@@ -11,8 +11,7 @@ int _atoi(char *s)
 	int value = 1;
 	int num = 0;
 
-	while (*s++)
-	{
+	do {
 		if (*s == '-')
 			value *= -1;
 
@@ -22,7 +21,7 @@ int _atoi(char *s)
 		else if (num > 0)
 			break;
 
-	}
+	} while (*s++)
 
 	return (num * value);
 }
