@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+char *cap_string(char *);
 char *string_toupper(char *);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *scr, int n);
